@@ -8,7 +8,7 @@ Ladies, tired of creepy men always demanding your attention?
 
 Well, we have the product for YOU!
 
-![Personal Space Informercial](personal-space-infomercial.mp4)
+![Personal Space Informercial](personal-space-infomercial.gif)
 
 ---
 
