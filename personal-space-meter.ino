@@ -16,30 +16,31 @@ unsigned long currentMillis;
 ///////////////////////////////////////////////////////////////////////////////
 void setup() {
   CircuitPlayground.begin();
+  CircuitPlayground.setBrightness(50);
 
   // Start at the beginning
   startIndex = 0;
-  Serial.begin(115200);
+//  Serial.begin(115200);
 
   // wait until serial port opens for native USB devices
-  while (! Serial) {
-    delay(1);
-  }
+//  while (! Serial) {
+//    delay(1);
+//  }
 
-  Serial.println("Adafruit VL53L0X test");
-  Serial.println("oh hai");
+//  Serial.println("Adafruit VL53L0X test");
+//  Serial.println("oh hai");
   if (!lox.begin()) {
-    Serial.println(F("Failed to boot VL53L0X"));
+//    Serial.println(F("Failed to boot VL53L0X"));
     while(1);
   }
   // power
-  Serial.println(F("VL53L0X API Simple Ranging example\n\n"));
+//  Serial.println(F("VL53L0X API Simple Ranging example\n\n"));
 }
 
 
 void loop() {
     VL53L0X_RangingMeasurementData_t measure;
-    Serial.println(measure.RangeMilliMeter);
+//    Serial.println(measure.RangeMilliMeter);
 
   // Turn off all the NeoPixels
   CircuitPlayground.clearPixels();
